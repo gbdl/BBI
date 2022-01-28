@@ -1,6 +1,6 @@
 Born-Infeld (BI) for AI: Energy-Conserving Descent (ECD) for Optimization
 ====
-This repository contains the code for the BBI optimizer, introduced in the paper _Born-Infeld (BI) for AI: Energy-Conserving Descent (ECD) for Optimization_. [2201.11137][http://arxiv.org/abs/2201.11137]
+This repository contains the code for the BBI optimizer, introduced in the paper _Born-Infeld (BI) for AI: Energy-Conserving Descent (ECD) for Optimization_. [2201.11137](http://arxiv.org/abs/2201.11137).
 It is implemented using Pytorch.
 
 The repository also includes the code needed to reproduce all the experiments presented in the paper. In particular:
