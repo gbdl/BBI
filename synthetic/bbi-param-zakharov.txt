@@ -1,0 +1,1 @@
+{"lr": 0.0026036721489343054, "deltaEn": 0.0, "v0": 1e-22, "threshold0": 1e+20, "threshold": 1e+25, "n_fixed_bounces": 0, "consEn": true}

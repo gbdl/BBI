@@ -1,0 +1,1 @@
+{"tune_epochs": 3, "n_trials": 50, "check_epochs": 150, "seed": 42, "sgd": {"stepsize": [0.001, 0.2], "rho": [0.8, 1.0]}, "problem": null, "BBI": {"stepsize": [0.001, 0.2]}, "comments": "test Experiment. Fixed BBI pars:\n\nthreshold_BBI: 2000\nthreshold0_BBI: 100\nconsEN_BBI: True\nnFixedBounces_BBI: 100\ndeltaEn: 0.0"}
