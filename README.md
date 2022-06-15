@@ -1,6 +1,6 @@
 Born-Infeld (BI) for AI: Energy-Conserving Descent (ECD) for Optimization
 ====
-This repository contains the code for the BBI optimizer, introduced in the paper _Born-Infeld (BI) for AI: Energy-Conserving Descent (ECD) for Optimization_. [2201.11137](http://arxiv.org/abs/2201.11137).
+This repository contains the code for the BBI optimizer, introduced in the paper _Born-Infeld (BI) for AI: Energy-Conserving Descent (ECD) for Optimization_.(ICML 2022) [2201.11137](http://arxiv.org/abs/2201.11137). 
 It is implemented using Pytorch.
 
 The repository also includes the code needed to reproduce all the experiments presented in the paper. In particular:
@@ -27,6 +27,9 @@ The repository also includes the code needed to reproduce all the experiments pr
 
     The folder `results` already includes some runs.
     The runs performed in this way are not noisy, i.e. the set of points sampled from the domain is kept fixed. To randomly change the points every "epoch" (1000 iterations), edit the file `experiments/PDE_PoissonD.py` by changing line 134 to `self.update_points = True`.
+
+- The `inflation.py` file also includes the optimizer `BBI_v0tuning`. This version (still in development and not tested on the examples in the paper) allows the user to automatically shift the hyperparameter `v0` (DeltaV in the paper) if it is too high. Its usage is demonstrated on MNIST in the notebook `mnist_BBI_self-tuning.ipynb`. In addition, this version of the optimizer also allows the user to specify a weight decay through the option `weight_decay`. 
+
 
 
 The code has been tested with Python 3.9, Pytorch 1.10, hyperopt 0.2.5. We ran the synthetic experiments and MNIST on a six-core i7-9850H CPU with 16 GB of RAM, while we ran the CIFAR and PDE experiments on a pair of GPUs. We tested both on a pair of NVIDIA GeForce RTX 2080 Ti and on a pair of NVIDIA Tesla V100-SXM2-16GB GPUs, coupled with 32 GB of RAM and AMD EPYC 7502P CPUs.
